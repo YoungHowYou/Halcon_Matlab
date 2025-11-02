@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hdevelop file_version="1.2" halcon_version="23.11.0.0">
+<procedure name="main">
+<interface/>
+<body>
+<l>dev_get_window (WindowHandle)</l>
+<l>create_matrix (3, 3, [1,2,3,3,2,1,1,2,3], MatrixID)</l>
+<l>get_handle_param (MatrixID, 'keys', [], GenParamValue)</l>
+<l>get_handle_tuple (MatrixID, GenParamValue[0], Tuple)</l>
+<c></c>
+<c></c>
+<l>get_full_matrix (MatrixID, Values)</l>
+<l>get_size_matrix (MatrixID, Rows, Columns)</l>
+<l>read_image (Image, '../../../中来pl爆模/新建文件夹 (3)/10_32_53_184_246626.bmp')</l>
+<l>decompose3 (Image, Image1, Image2, Image3)</l>
+<l>* WindowHandle:=0</l>
+<l>Matlab_engOpen_Init (0, 1024, MatlabDictHandle)</l>
+<l>Matlab_CMD (WindowHandle, 'workspace')</l>
+<c></c>
+<l>Matlab_CMD (WindowHandle, 'ft = fittype( "42.7-a*(exp(x/(b*0.0256064)))-(x/c)", "independent", "x", "dependent", "y" ); ')</l>
+<l>Matlab_CMD (WindowHandle, 'opts = fitoptions( "Method", "NonlinearLeastSquares" );')</l>
+<l>Matlab_CMD (WindowHandle, 'opts.Algorithm = "Levenberg-Marquardt";')</l>
+<l>Matlab_CMD (WindowHandle, 'opts.Display = "Off";')</l>
+<l>Matlab_CMD (WindowHandle, 'opts.Lower = [0 0 0];')</l>
+<l>Matlab_CMD (WindowHandle, 'opts.Robust = "Bisquare";')</l>
+<l>Matlab_CMD (WindowHandle, 'opts.StartPoint = [0 1.5 10];')</l>
+<l>Matlab_CMD (WindowHandle, 'opts.Upper = [1 3 Inf];')</l>
+<c></c>
+<l>I:=[42.7,42.6146,42.4865,42.3584,42.273,41.1628,41.1201,41.0774,41.0347,40.992,40.9493,40.9066,40.8639,40.8212,40.7785,40.7358,39.284,38.43,25.62,17.08,8.54,0]</l>
+<l>U:=[0,0.579000002,0.610568039,0.627232521,0.634974767,0.673746897,0.674477851,0.67515488,0.675958601,0.676538716,0.677205035,0.677934798,0.67854918,0.679161211,0.679750975,0.680393139,0.69443494,0.699595388,0.7300562,0.738289798,0.743940385,0.748200791]</l>
+<l>Matlab_engSetmxArray (|I|, 1, 'I', real(I))//一定要real强制转换一下</l>
+<l>Matlab_engSetmxArray (|U|, 1, 'U', real(U))</l>
+<c></c>
+<c></c>
+<c></c>
+<c></c>
+<l>* Matlab_CMD (WindowHandle, '[xData, yData] = prepareCurveData( U, I );')</l>
+<l>Matlab_CMD (WindowHandle, '[fitresult, gof] = fit( U, I, ft, opts );')</l>
+<l>Matlab_CMD (WindowHandle, 'CC=[fitresult.a,fitresult.b,fitresult.c]')</l>
+<l>Matlab_engGetmxArray ('CC', M, N, VAL)</l>
+<c></c>
+<l>Matlab_CMD (WindowHandle, 'figure( "Name", "IV" );')</l>
+<l>Matlab_CMD (WindowHandle, 'h = plot( fitresult, U, I );')</l>
+<l>Matlab_CMD (WindowHandle, 'legend( h, "I vs V", "IV曲线", "Location", "SouthWest", "Interpreter", "none" );')</l>
+<l>Matlab_CMD (WindowHandle, 'xlabel( "电压", "Interpreter", "none" );')</l>
+<l>Matlab_CMD (WindowHandle, 'ylabel( "电流", "Interpreter", "none" );')</l>
+<l>stop()</l>
+<l>Matlab_CMD (WindowHandle, 'close(gcf)')</l>
+<c></c>
+<c></c>
+<c></c>
+<l>Matlab_engClose()</l>
+<c></c>
+<c></c>
+</body>
+<docu id="main">
+<parameters/>
+</docu>
+</procedure>
+<procedure name="Matlab_DeclarationVAL">
+<interface>
+<ic>
+<par name="MatlabDictHandle" base_type="ctrl" dimension="0"/>
+<par name="name" base_type="ctrl" dimension="0"/>
+<par name="m" base_type="ctrl" dimension="0"/>
+<par name="n" base_type="ctrl" dimension="0"/>
+<par name="Val" base_type="ctrl" dimension="0"/>
+</ic>
+</interface>
+<body>
+<l>create_matrix (m, n, Val, MatrixID)</l>
+<l>set_dict_tuple (MatlabDictHandle, name, MatrixID)</l>
+<l>return ()</l>
+</body>
+<docu id="Matlab_DeclarationVAL">
+<parameters>
+<parameter id="MatlabDictHandle"/>
+<parameter id="Val"/>
+<parameter id="m"/>
+<parameter id="n"/>
+<parameter id="name"/>
+</parameters>
+</docu>
+</procedure>
+<procedure name="Matlab_engOpen_Init">
+<interface>
+<ic>
+<par name="Visible" base_type="ctrl" dimension="0"/>
+<par name="Buffersize" base_type="ctrl" dimension="0"/>
+</ic>
+<oc>
+<par name="MatlabDictHandle" base_type="ctrl" dimension="0"/>
+</oc>
+</interface>
+<body>
+<l>Matlab_engOpen()//打开matlab引擎</l>
+<l>get_current_dir (DirName)</l>
+<l>Matlab_engEvalString('addpath("'+DirName+'")')//将根目录下的.m函数包含进来</l>
+<l>Matlab_engOutputBuffer (Buffersize, BufferMsg)//关闭控制台缓冲区</l>
+<l>Matlab_engSetVisible (Visible)//不显示matlab窗口</l>
+<l>create_dict (MatlabDictHandle)//matlab的halcon缓冲区</l>
+<l>return ()</l>
+</body>
+<docu id="Matlab_engOpen_Init">
+<parameters>
+<parameter id="Buffersize"/>
+<parameter id="MatlabDictHandle"/>
+<parameter id="Visible"/>
+</parameters>
+</docu>
+</procedure>
+<procedure name="Matlab_disp_text">
+<interface>
+<ic>
+<par name="WindowHandle" base_type="ctrl" dimension="0"/>
+</ic>
+</interface>
+<body>
+<c></c>
+<l>return ()</l>
+</body>
+<docu id="Matlab_disp_text">
+<parameters>
+<parameter id="WindowHandle"/>
+</parameters>
+</docu>
+</procedure>
+<procedure name="Matlab_CMD">
+<interface>
+<ic>
+<par name="WindowHandle" base_type="ctrl" dimension="0"/>
+<par name="String" base_type="ctrl" dimension="0"/>
+</ic>
+</interface>
+<body>
+<l>Matlab_engEvalString(String)</l>
+<l>if(WindowHandle!=0)</l>
+<l>Matlab_engOutputBuffer (-1, BufferMsg)//关闭控制台缓冲区</l>
+<l>clear_window (WindowHandle)</l>
+<l>disp_text (WindowHandle, BufferMsg, 'window', 12, 12, 'black', [], [])</l>
+<l>endif</l>
+<l>return ()</l>
+</body>
+<docu id="Matlab_CMD">
+<parameters>
+<parameter id="String"/>
+<parameter id="WindowHandle"/>
+</parameters>
+</docu>
+</procedure>
+</hdevelop>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\desktop\source\Halcon_Matlab\build\x64\Debug\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\desktop\source\Halcon_Matlab\build\x64\Debug\Halcon_Matlab_help_en_US</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\desktop\source\Halcon_Matlab\build\x64\Debug\Halcon_Matlab_help</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\desktop\source\Halcon_Matlab\build\x64\Debug\Halcon_Matlab_html</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\desktop\source\Halcon_Matlab\bin\Halcon_Matlab.dll</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

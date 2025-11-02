@@ -1,0 +1,24 @@
+^D:\DESKTOP\SOURCE\HALCON_MATLAB\BUILD\CMAKEFILES\2065049CFEACEF0D05F6B67B8E98C35F\HCPPHALCON_MATLAB.CPP.RULE
+setlocal
+cd D:\desktop\source\Halcon_Matlab\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\MVTec\HALCON-23.11-Progress\bin\x64-win64\hcomp.exe" -u -P -pHalcon_Matlab D:\desktop\source\Halcon_Matlab\def\Halcon_Matlab.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\DESKTOP\SOURCE\HALCON_MATLAB\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/desktop/source/Halcon_Matlab -BD:/desktop/source/Halcon_Matlab/build --check-stamp-file D:/desktop/source/Halcon_Matlab/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

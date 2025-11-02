@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{72032EC9-A1E7-3231-8E9F-28B773DD9005}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Halcon_Matlab_html</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\desktop\source\Halcon_Matlab\build\CMakeFiles\17e6292a28d523f2670aad583726c568\reference.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating extension package reference documentation for Halcon_Matlab</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/desktop/source/Halcon_Matlab/build/doc/html/reference
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E chdir D:/desktop/source/Halcon_Matlab/build/doc/html/reference "C:/Program Files/MVTec/HALCON-23.11-Progress/bin/x64-win64/hcomp.exe" -u -R -pHalcon_Matlab -len_US D:\desktop\source\Halcon_Matlab\def\Halcon_Matlab.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\desktop\source\Halcon_Matlab\def\Halcon_Matlab.def;C:\Program Files\MVTec\HALCON-23.11-Progress\bin\x64-win64\hcomp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\desktop\source\Halcon_Matlab\build\doc\html\reference;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_by_name.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_classes.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOpen.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engClose.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engEvalString.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engPutVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOutputBuffer.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetVisible.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\HHIK.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\toc_userextensions.html</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating extension package reference documentation for Halcon_Matlab</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/desktop/source/Halcon_Matlab/build/doc/html/reference
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E chdir D:/desktop/source/Halcon_Matlab/build/doc/html/reference "C:/Program Files/MVTec/HALCON-23.11-Progress/bin/x64-win64/hcomp.exe" -u -R -pHalcon_Matlab -len_US D:\desktop\source\Halcon_Matlab\def\Halcon_Matlab.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\desktop\source\Halcon_Matlab\def\Halcon_Matlab.def;C:\Program Files\MVTec\HALCON-23.11-Progress\bin\x64-win64\hcomp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\desktop\source\Halcon_Matlab\build\doc\html\reference;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_by_name.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_classes.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOpen.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engClose.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engEvalString.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engPutVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOutputBuffer.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetVisible.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\HHIK.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\toc_userextensions.html</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating extension package reference documentation for Halcon_Matlab</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/desktop/source/Halcon_Matlab/build/doc/html/reference
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E chdir D:/desktop/source/Halcon_Matlab/build/doc/html/reference "C:/Program Files/MVTec/HALCON-23.11-Progress/bin/x64-win64/hcomp.exe" -u -R -pHalcon_Matlab -len_US D:\desktop\source\Halcon_Matlab\def\Halcon_Matlab.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\desktop\source\Halcon_Matlab\def\Halcon_Matlab.def;C:\Program Files\MVTec\HALCON-23.11-Progress\bin\x64-win64\hcomp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\desktop\source\Halcon_Matlab\build\doc\html\reference;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_by_name.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_classes.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOpen.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engClose.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engEvalString.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engPutVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOutputBuffer.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetVisible.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\HHIK.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\toc_userextensions.html</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating extension package reference documentation for Halcon_Matlab</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory D:/desktop/source/Halcon_Matlab/build/doc/html/reference
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E chdir D:/desktop/source/Halcon_Matlab/build/doc/html/reference "C:/Program Files/MVTec/HALCON-23.11-Progress/bin/x64-win64/hcomp.exe" -u -R -pHalcon_Matlab -len_US D:\desktop\source\Halcon_Matlab\def\Halcon_Matlab.def
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\desktop\source\Halcon_Matlab\def\Halcon_Matlab.def;C:\Program Files\MVTec\HALCON-23.11-Progress\bin\x64-win64\hcomp.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\desktop\source\Halcon_Matlab\build\doc\html\reference;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_by_name.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_classes.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOpen.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engClose.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engEvalString.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engPutVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOutputBuffer.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetVisible.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\HHIK.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\toc_userextensions.html</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\desktop\source\Halcon_Matlab\build\CMakeFiles\a73b11e64e77324b005f4b0f251760a2\Halcon_Matlab_html.rule">
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_by_name.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_classes.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOpen.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engClose.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engEvalString.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engPutVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOutputBuffer.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetVisible.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\HHIK.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\toc_userextensions.html;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\desktop\source\Halcon_Matlab\build\CMakeFiles\Halcon_Matlab_html</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_by_name.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_classes.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOpen.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engClose.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engEvalString.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engPutVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOutputBuffer.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetVisible.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\HHIK.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\toc_userextensions.html;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\desktop\source\Halcon_Matlab\build\CMakeFiles\Halcon_Matlab_html</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_by_name.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_classes.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOpen.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engClose.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engEvalString.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engPutVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOutputBuffer.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetVisible.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\HHIK.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\toc_userextensions.html;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\desktop\source\Halcon_Matlab\build\CMakeFiles\Halcon_Matlab_html</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</VerifyInputsAndOutputsExist>
+      <BuildInParallel Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</BuildInParallel>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_by_name.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\index_classes.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOpen.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\(.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Hproc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\proc_handle.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\).html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engClose.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engEvalString.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engPutVariable.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engOutputBuffer.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetVisible.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engSetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\Matlab_engGetmxArray.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\HHIK.html;D:\desktop\source\Halcon_Matlab\build\doc\html\reference\toc_userextensions.html;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\desktop\source\Halcon_Matlab\build\CMakeFiles\Halcon_Matlab_html</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</VerifyInputsAndOutputsExist>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\desktop\source\Halcon_Matlab\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/desktop/source/Halcon_Matlab/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/desktop/source/Halcon_Matlab -BD:/desktop/source/Halcon_Matlab/build --check-stamp-file D:/desktop/source/Halcon_Matlab/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Users\Public\Documents\MVTec\HALCON-23.11-Progress\examples\cmake\FindHALCON.cmake;C:\Users\Public\Documents\MVTec\HALCON-23.11-Progress\examples\cmake\UseHALCON.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeCCompiler.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeCXXCompiler.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeRCCompiler.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\desktop\source\Halcon_Matlab\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/desktop/source/Halcon_Matlab/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/desktop/source/Halcon_Matlab -BD:/desktop/source/Halcon_Matlab/build --check-stamp-file D:/desktop/source/Halcon_Matlab/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Users\Public\Documents\MVTec\HALCON-23.11-Progress\examples\cmake\FindHALCON.cmake;C:\Users\Public\Documents\MVTec\HALCON-23.11-Progress\examples\cmake\UseHALCON.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeCCompiler.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeCXXCompiler.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeRCCompiler.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\desktop\source\Halcon_Matlab\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/desktop/source/Halcon_Matlab/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/desktop/source/Halcon_Matlab -BD:/desktop/source/Halcon_Matlab/build --check-stamp-file D:/desktop/source/Halcon_Matlab/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Users\Public\Documents\MVTec\HALCON-23.11-Progress\examples\cmake\FindHALCON.cmake;C:\Users\Public\Documents\MVTec\HALCON-23.11-Progress\examples\cmake\UseHALCON.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeCCompiler.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeCXXCompiler.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeRCCompiler.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\desktop\source\Halcon_Matlab\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/desktop/source/Halcon_Matlab/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/desktop/source/Halcon_Matlab -BD:/desktop/source/Halcon_Matlab/build --check-stamp-file D:/desktop/source/Halcon_Matlab/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Linker\MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Platform\WindowsPaths.cmake;C:\Users\Public\Documents\MVTec\HALCON-23.11-Progress\examples\cmake\FindHALCON.cmake;C:\Users\Public\Documents\MVTec\HALCON-23.11-Progress\examples\cmake\UseHALCON.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeCCompiler.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeCXXCompiler.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeRCCompiler.cmake;D:\desktop\source\Halcon_Matlab\build\CMakeFiles\4.2.0-rc1\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\desktop\source\Halcon_Matlab\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\desktop\source\Halcon_Matlab\build\CMakeFiles\Halcon_Matlab_html">
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\desktop\source\Halcon_Matlab\build\ZERO_CHECK.vcxproj">
+      <Project>{E500660E-F7C2-3CE4-B983-19E57B373FEE}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

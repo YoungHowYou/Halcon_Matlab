@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\desktop\source\Halcon_Matlab\build\HHalcon_Matlab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\desktop\source\Halcon_Matlab\source\Halcon_Matlab.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\desktop\source\Halcon_Matlab\source\Halcon_Matlab.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\desktop\source\Halcon_Matlab\build\CMakeFiles\2065049cfeacef0d05f6b67b8e98c35f\HHalcon_Matlab.c.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\desktop\source\Halcon_Matlab\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0E142BB8-1B37-3EF1-B94F-76B5B17CBD84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{91147766-2E55-39D1-B646-FF91C6169854}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
