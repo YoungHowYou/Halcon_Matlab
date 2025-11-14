@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<hdevelop file_version="1.2" halcon_version="23.11.0.0">
+<hdevelop file_version="1.2" halcon_version="24.11.1.0">
 <procedure name="main">
 <interface/>
 <body>
 <l>dev_get_window (WindowHandle)</l>
-<l>create_matrix (3, 3, [1,2,3,3,2,1,1,2,3], MatrixID)</l>
-<l>get_handle_param (MatrixID, 'keys', [], GenParamValue)</l>
-<l>get_handle_tuple (MatrixID, GenParamValue[0], Tuple)</l>
 <c></c>
-<c></c>
-<l>get_full_matrix (MatrixID, Values)</l>
-<l>get_size_matrix (MatrixID, Rows, Columns)</l>
-<l>read_image (Image, '../../../中来pl爆模/新建文件夹 (3)/10_32_53_184_246626.bmp')</l>
-<l>decompose3 (Image, Image1, Image2, Image3)</l>
-<l>* WindowHandle:=0</l>
 <l>Matlab_engOpen_Init (0, 1024, MatlabDictHandle)</l>
 <l>Matlab_CMD (WindowHandle, 'workspace')</l>
 <c></c>

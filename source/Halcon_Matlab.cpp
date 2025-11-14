@@ -36,9 +36,9 @@ Engine *ep;
 //     Engine *ep;
 // } HUserHandleData;
 
-// static Herror HUserHandleDestructor(Hproc_handle ph, HUserHandleData *data) {
-//     if (data->ep) {
-//         engClose(data->ep);
+// static Herror HUserHan
+//         engClose(data-dleDestructor(Hproc_handle ph, HUserHandleData *data) {
+//     if (data->ep) {>ep);
 //         data->ep = NULL;
 //     }
 //     return HFree(ph, data);

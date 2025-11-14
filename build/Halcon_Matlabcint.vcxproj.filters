@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\desktop\source\Halcon_Matlab\build\HCHalcon_Matlab.c">
+    <ClCompile Include="C:\Users\young\Desktop\Source\Halcon_Extension\Halcon_Matlab\build\HCHalcon_Matlab.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\desktop\source\Halcon_Matlab\build\HCHalcon_Matlab.h">
+    <ClInclude Include="C:\Users\young\Desktop\Source\Halcon_Extension\Halcon_Matlab\build\HCHalcon_Matlab.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\desktop\source\Halcon_Matlab\build\CMakeFiles\2065049cfeacef0d05f6b67b8e98c35f\HCHalcon_Matlab.c.rule">
+    <CustomBuild Include="C:\Users\young\Desktop\Source\Halcon_Extension\Halcon_Matlab\build\CMakeFiles\ff38f899f1fa769c67e3782802c7fbb7\HCHalcon_Matlab.c.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
-    <CustomBuild Include="D:\desktop\source\Halcon_Matlab\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\young\Desktop\Source\Halcon_Extension\Halcon_Matlab\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{0E142BB8-1B37-3EF1-B94F-76B5B17CBD84}</UniqueIdentifier>
+      <UniqueIdentifier>{3CBF491A-E9CA-3BCB-9708-929E367F8615}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{A29E5BC8-48B9-3BB8-B00C-47C4E68F2951}</UniqueIdentifier>
+      <UniqueIdentifier>{BBEE42C1-DC1E-346D-985A-DB13FC9DA112}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{91147766-2E55-39D1-B646-FF91C6169854}</UniqueIdentifier>
+      <UniqueIdentifier>{D630482F-0B33-33A9-8F4D-51E7640BDE4E}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

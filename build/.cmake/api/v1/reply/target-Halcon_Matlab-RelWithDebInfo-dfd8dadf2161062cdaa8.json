@@ -1,0 +1,366 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "C:/Users/young/Desktop/Source/Halcon_Extension/Halcon_Matlab/bin/RelWithDebInfo/Halcon_Matlab.dll"
+		},
+		{
+			"path" : "C:/Users/young/Desktop/Source/Halcon_Extension/Halcon_Matlab/bin/RelWithDebInfo/Halcon_Matlab.lib"
+		},
+		{
+			"path" : "C:/Users/young/Desktop/Source/Halcon_Extension/Halcon_Matlab/bin/RelWithDebInfo/Halcon_Matlab.pdb"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"HALCON_AddExtensionPackage",
+			"install",
+			"target_link_libraries",
+			"add_dependencies",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"C:/Users/young/AppData/Roaming/MVTec/HALCON-24.11-Progress-Steady/examples/cmake/UseHALCON.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 60,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 393,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 473,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 403,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 95,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 407,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 1,
+				"line" : 88,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "HALCON::Halcon::@6890427a1f51a3e7e1df"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /O2 /Ob1 /DNDEBUG -MD -Zi"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "Halcon_Matlab_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/young/AppData/Local/Programs/MVTec/HALCON-24.11-Progress-Steady/include/halconcpp"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/young/Desktop/Source/Halcon_Extension/Halcon_Matlab/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/young/Desktop/Source/Halcon_Extension/Halcon_Matlab/3rd/matlab/include"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "C:/Users/young/AppData/Local/Programs/MVTec/HALCON-24.11-Progress-Steady/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS /EHsc /O2 /Ob1 /DNDEBUG -MD -Zi"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "Halcon_Matlab_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/young/AppData/Local/Programs/MVTec/HALCON-24.11-Progress-Steady/include/halconcpp"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/young/Desktop/Source/Halcon_Extension/Halcon_Matlab/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/young/Desktop/Source/Halcon_Extension/Halcon_Matlab/3rd/matlab/include"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "C:/Users/young/AppData/Local/Programs/MVTec/HALCON-24.11-Progress-Steady/include"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				2
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "Halcon_Matlab_help::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "Halcon_Matlab_html::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "Halcon_Matlab::@6890427a1f51a3e7e1df",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 3,
+				"path" : "Halcon_Matlab/lib/x64-win64"
+			},
+			{
+				"backtrace" : 3,
+				"path" : "Halcon_Matlab/bin/x64-win64"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Program Files/Halcon_Matlab"
+		}
+	},
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "HALCON::Halcon::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "HALCON::Halcon::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 5,
+			"fragment" : "C:\\Users\\young\\AppData\\Local\\Programs\\MVTec\\HALCON-24.11-Progress-Steady/lib/x64-win64/halconcpp.lib"
+		},
+		{
+			"backtrace" : 5,
+			"fragment" : "C:/Users/young/Desktop/Source/Halcon_Extension/Halcon_Matlab/3rd/matlab/lib/win64/microsoft/libeng.lib"
+		},
+		{
+			"backtrace" : 5,
+			"fragment" : "C:/Users/young/Desktop/Source/Halcon_Extension/Halcon_Matlab/3rd/matlab/lib/win64/microsoft/libmx.lib"
+		},
+		{
+			"backtrace" : 5,
+			"fragment" : "C:/Users/young/Desktop/Source/Halcon_Extension/Halcon_Matlab/3rd/matlab/lib/win64/microsoft/libmat.lib"
+		}
+	],
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/debug /INCREMENTAL",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "C:\\Users\\young\\AppData\\Local\\Programs\\MVTec\\HALCON-24.11-Progress-Steady\\lib\\x64-win64\\halcon.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "C:\\Users\\young\\AppData\\Local\\Programs\\MVTec\\HALCON-24.11-Progress-Steady\\lib\\x64-win64\\halconcpp.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "C:\\Users\\young\\Desktop\\Source\\Halcon_Extension\\Halcon_Matlab\\3rd\\matlab\\lib\\win64\\microsoft\\libeng.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "C:\\Users\\young\\Desktop\\Source\\Halcon_Extension\\Halcon_Matlab\\3rd\\matlab\\lib\\win64\\microsoft\\libmx.lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "C:\\Users\\young\\Desktop\\Source\\Halcon_Extension\\Halcon_Matlab\\3rd\\matlab\\lib\\win64\\microsoft\\libmat.lib",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 4,
+			"id" : "HALCON::Halcon::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 5,
+			"fragment" : "C:\\Users\\young\\AppData\\Local\\Programs\\MVTec\\HALCON-24.11-Progress-Steady/lib/x64-win64/halconcpp.lib"
+		},
+		{
+			"backtrace" : 5,
+			"fragment" : "C:/Users/young/Desktop/Source/Halcon_Extension/Halcon_Matlab/3rd/matlab/lib/win64/microsoft/libeng.lib"
+		},
+		{
+			"backtrace" : 5,
+			"fragment" : "C:/Users/young/Desktop/Source/Halcon_Extension/Halcon_Matlab/3rd/matlab/lib/win64/microsoft/libmx.lib"
+		},
+		{
+			"backtrace" : 5,
+			"fragment" : "C:/Users/young/Desktop/Source/Halcon_Extension/Halcon_Matlab/3rd/matlab/lib/win64/microsoft/libmat.lib"
+		}
+	],
+	"name" : "Halcon_Matlab",
+	"nameOnDisk" : "Halcon_Matlab.dll",
+	"orderDependencies" : 
+	[
+		{
+			"backtrace" : 6,
+			"id" : "Halcon_Matlab_help::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "Halcon_Matlab_html::@6890427a1f51a3e7e1df"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				3
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/HHalcon_Matlab.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "source/Halcon_Matlab.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 1,
+			"path" : "source/Halcon_Matlab.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/CMakeFiles/ff38f899f1fa769c67e3782802c7fbb7/HHalcon_Matlab.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "SHARED_LIBRARY"
+}
