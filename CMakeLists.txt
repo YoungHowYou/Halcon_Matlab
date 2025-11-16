@@ -85,6 +85,10 @@ set(HALCON_ROOT $ENV{HALCONROOT})   # 转成 CMake 变量，后面用着方便
 set(HALCON_INCLUDE_DIR ${HALCON_ROOT}/include/halconcpp)#HALCON_INCLUDE_DIR变量是${HALCON_ROOT}/include的路径
 # Halcon 的 lib 目录（根据编译器自动选 x64-win64 vs x86-win32）
 set(HALCON_LIB_DIR ${HALCON_ROOT}/lib/x64-win64)#
+file(GLOB_RECURSE PROJECT_HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h")
+target_sources(${ProjectName} PRIVATE ${PROJECT_HEADERS})
+
+
 target_include_directories(${ProjectName} 
     PUBLIC
         $<BUILD_INTERFACE:${HALCON_INCLUDE_DIR}>
