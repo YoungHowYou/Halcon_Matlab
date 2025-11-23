@@ -1,2 +1,3 @@
 # Halcon_Matlab
 Halcon的Matlab拓展包
+这个是matlab的拓展包，可以让halcon调用matlab引擎，从而实现halcon和matlab的联合编程，注意安装matlab的时候要把环境变量path增加matlab的路径，系统里面增加环境变量名HALCONEXTENSIONS的环境变量，然后把这个包路径填入即可
